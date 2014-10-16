@@ -337,6 +337,13 @@ static NSString *kObserverKeyEnablePreInputSearch = @"enablePreInputSearch";
     [self.suggestionView removeFromSuperview];
 }
 
+
+- (void)hideIfShowing
+{
+	[self removeSuggestionView];
+}
+
+
 #pragma mark - UITextBorderStyle
 
 - (void)configureSuggestionViewForBorderStyle:(UITextBorderStyle)borderStyle

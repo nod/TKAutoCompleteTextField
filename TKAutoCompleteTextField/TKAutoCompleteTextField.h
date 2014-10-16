@@ -27,4 +27,6 @@
 
 @property (nonatomic, strong) NSArray *suggestions;
 
+- (void)hideIfShowing;
+
 @end
